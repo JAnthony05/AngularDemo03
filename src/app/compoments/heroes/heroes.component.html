@@ -1,10 +1,4 @@
 <div class="card-columns">
-  <div class="card" *ngFor="let item of heroes" style="width: 18rem;">
-    <img class="card-img-top" [src]="item.img" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{item.nombre}}</h5>
-      <p class="card-text">{{item.bio}}</p>
-      <a (click)="verdetalle(item.idheroe)" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+   <!-- *ngFor="let item of heroes"-->
+ <app-heroetarjeta *ngFor="let heroe of heroes" [heroe]="heroe"></app-heroetarjeta>
 </div>
